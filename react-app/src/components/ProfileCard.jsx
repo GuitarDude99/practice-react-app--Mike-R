@@ -1,27 +1,37 @@
+
+
 function ProfileCard() {
 
     let profileData = [
         { 
-        name: "Clark K", 
-        age: 10000000,
-        bio: "This is Clark's bio." 
+        name: "Clark Kent", 
+        age: "♾️",
+        bio: "I thought Shaquille O'neal was Superman?"
         }, 
         { 
-        name: "Peter P", 
+        name: "Peter Parker", 
         age: 48,
-        bio: "This is Peter's bio." 
+        bio: "Peter Parker is the real Spiderman!" 
         }, 
         { 
-        name: "Bruce W", 
+        name: "Bruce Wayne", 
         age: 31,
-        bio: "This is Bruce's bio." 
+        bio: "Bruce Wayne is filthy rich!" 
         }
 ]
 // const profile = profileData.map(data, index) => ;
-const profile = profileData.map((data, index) => (<li key={index}> Name: {data.name} <br /> - Age: {data.age} <br /> - {data.bio} </li>));
+const profile = profileData.map((data, index) => ( 
+<div id="margin"> 
+    <li class="single-profile" key={index}> 
+        <key class="key-names"> <b>NAME:</b> </key> {data.name} <br />
+        <key class="key-names"> <b>AGE:</b> </key> {data.age} <br />
+        <key class="key-names"> <b>BIO:</b> </key> {data.bio} <br />
+    </li>
+</div>));
 
+<div class="key-names"></div>
     return (
-       <ul>{profile}</ul>
+       <ul class="profiles">{profile}</ul>
     );
 
 }
