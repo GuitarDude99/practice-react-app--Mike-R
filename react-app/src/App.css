@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: cadetblue;
+  background-color: rgb(75, 53, 218);
   border-style: outset;
   border-color: salmon;
 }
@@ -18,9 +18,12 @@
 }
 
 .profiles {
-  border-style: outset;
-  border-color: salmon;
-  text-shadow: 1px 1px 2.1px black;
+  background-color: #001f3f; 
+  border: 3px solid yellow;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 320px;
+  text-align: left;
 }
 
 .header {
